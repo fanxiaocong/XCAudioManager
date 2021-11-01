@@ -8,35 +8,38 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XCAudioManager'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of XCAudioManager.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.version          = '1.0.0'
+  s.summary          = 'XCAudioManager.'
+  
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  XCAudioManager 基于科大讯飞的语音阅读和语音识别功能
                        DESC
 
   s.homepage         = 'https://github.com/fanxiaocong/XCAudioManager'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'fanxiaocong' => '1016697223@qq.com' }
   s.source           = { :git => 'https://github.com/fanxiaocong/XCAudioManager.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'XCAudioManager/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'XCAudioManager' => ['XCAudioManager/Assets/*.png']
-  # }
+  s.source_files = [
+    'XCAudioManager/Classes/*.{h,m}',
+    'XCAudioManager/Classes/XFAudio/*.{h,m}'
+  ]
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # 第三方 framework
+  s.vendored_frameworks = 'XCAudioManager/Classes/XFAudio/iflyMSC.framework'
+
+  s.frameworks = [
+    'CoreTelephony',
+    'SystemConfiguration'
+  ]
+
+  s.libraries = [
+    'z',
+    'c++'
+  ]
+
+#s.xcconfig = {'ENABLE_BITCODE' => 'NO'}
+  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO', 'ONLY_ACTIVE_ARCH' => 'NO'}
 end

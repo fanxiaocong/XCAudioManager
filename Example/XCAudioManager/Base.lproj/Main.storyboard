@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,12 +18,54 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="识别结果：" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXh-k5-vdO">
+                                <rect key="frame" x="15" y="100" width="345" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7F-g9-dB2">
+                                <rect key="frame" x="0.0" y="567" width="90" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="kjL-YD-vO1"/>
+                                    <constraint firstAttribute="height" constant="50" id="la0-vv-8Ez"/>
+                                </constraints>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="start:" destination="whP-gf-Uak" eventType="touchUpInside" id="lVE-xb-6xf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVT-wM-Ij0">
+                                <rect key="frame" x="285" y="567" width="90" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="ixQ-16-cri"/>
+                                    <constraint firstAttribute="height" constant="50" id="yED-5z-fLY"/>
+                                </constraints>
+                                <state key="normal" title="结束"/>
+                                <connections>
+                                    <action selector="end:" destination="whP-gf-Uak" eventType="touchUpInside" id="yDZ-EE-bpT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RVT-wM-Ij0" firstAttribute="centerY" secondItem="K7F-g9-dB2" secondAttribute="centerY" id="4LR-i9-31S"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="K7F-g9-dB2" secondAttribute="bottom" constant="50" id="8bK-IA-EMO"/>
+                            <constraint firstItem="K7F-g9-dB2" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="8h1-EC-KOL"/>
+                            <constraint firstItem="KXh-k5-vdO" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="15" id="PEU-i0-B1t"/>
+                            <constraint firstAttribute="trailing" secondItem="RVT-wM-Ij0" secondAttribute="trailing" id="hTQ-t9-3Sj"/>
+                            <constraint firstItem="KXh-k5-vdO" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="100" id="xbc-gL-cpM"/>
+                            <constraint firstAttribute="trailing" secondItem="KXh-k5-vdO" secondAttribute="trailing" constant="15" id="zoM-1d-237"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultLB" destination="KXh-k5-vdO" id="VXS-wL-BXx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="-20" y="381.85907046476763"/>
         </scene>
     </scenes>
 </document>

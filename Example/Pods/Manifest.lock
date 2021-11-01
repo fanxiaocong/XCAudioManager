@@ -1,0 +1,16 @@
+PODS:
+  - XCAudioManager (1.0.0)
+
+DEPENDENCIES:
+  - XCAudioManager (from `../`)
+
+EXTERNAL SOURCES:
+  XCAudioManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XCAudioManager: 451736dbea405c69bfb60e59d6e7f144810a74e0
+
+PODFILE CHECKSUM: 503ba3b299d457f4b98d153c27179ca0fb42821d
+
+COCOAPODS: 1.10.2

@@ -1,0 +1,6 @@
+framework module Pods_XCAudioManager_Example {
+  umbrella header "Pods-XCAudioManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

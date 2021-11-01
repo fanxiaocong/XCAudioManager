@@ -7,12 +7,13 @@
 //
 
 #import "XCAppDelegate.h"
+#import "XCAudioManager.h"
 
 @implementation XCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [[XCAudioManager shared] initialized:@"171efa71" language:XCAudioLanguageMandarin];
     return YES;
 }
 

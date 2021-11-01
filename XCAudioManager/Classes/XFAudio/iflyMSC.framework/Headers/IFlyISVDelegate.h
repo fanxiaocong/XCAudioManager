@@ -28,7 +28,7 @@
  *
  *  @param errorCode 错误码
  */
--(void) onCompleted:(IFlySpeechError *) errorCode;
+-(void) onError:(IFlySpeechError *) errorCode;
 
 @optional
 

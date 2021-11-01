@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/fanxiaocong/XCAudioManager.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
-
+  s.platform     = :ios
   s.source_files = [
     'XCAudioManager/Classes/*.{h,m}',
     'XCAudioManager/Classes/XFAudio/*.{h,m}'
@@ -40,6 +40,10 @@ Pod::Spec.new do |s|
     'c++'
   ]
 
-#s.xcconfig = {'ENABLE_BITCODE' => 'NO'}
-  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO', 'ONLY_ACTIVE_ARCH' => 'NO'}
+  s.pod_target_xcconfig = {
+    'ENABLE_BITCODE' => 'NO',
+    'ONLY_ACTIVE_ARCH' => 'NO',
+    'VALID_ARCHS' => 'arm64e',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 x86_64 arm64'
+  }
 end

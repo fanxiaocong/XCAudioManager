@@ -29,7 +29,7 @@
  *
  *  @param error 识别结束错误码
  */
-- (void)onCompleted: (IFlySpeechError *) error;
+- (void)onError: (IFlySpeechError *) error;
 
 @optional
 

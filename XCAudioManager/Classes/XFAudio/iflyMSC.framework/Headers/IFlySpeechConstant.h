@@ -92,41 +92,6 @@
 +(NSString*)LANGUAGE_ENGLISH;
 
 /*!
- *  语言
- *
- *  @return 俄语value
- */
-+(NSString*)LANGUAGE_RUSSIAN;
-
-/*!
- *  语言
- *
- *  @return 日语value
- */
-+(NSString*)LANGUAGE_JAPANESE;
-
-/*!
- *  语言
- *
- *  @return 法语value
- */
-+(NSString*)LANGUAGE_FRENCH;
-
-/*!
- *  语言
- *
- *  @return 西班牙语value
- */
-+(NSString*)LANGUAGE_SPANISH;
-
-/*!
- *  语言
- *
- *  @return 韩语value
- */
-+(NSString*)LANGUAGE_KOREAN;
-
-/*!
  *  返回结果的数据格式，可设置为json，xml，plain，默认为json。
  *
  *  @return 返回结果的数据格式key
@@ -209,7 +174,7 @@
 +(NSString*)SAMPLE_RATE;
 
 /*!
- *  合成、识别、唤醒、声纹等业务采样率。
+ *  合成、识别、唤醒、评测、声纹等业务采样率。
  *
  *  @return 合成及识别采样率8K Value。
  */
@@ -230,13 +195,6 @@
  *  @return 引擎类型key。
  */
 +(NSString*)ENGINE_TYPE;
-
-/*!
- *  本地xtts识别引擎。
- *
- *  @return 本地识别引擎value。
- */
-+(NSString*)TYPE_LOCAL_XTTS;
 
 /*!
  *  本地识别引擎。
@@ -636,13 +594,6 @@
  *  @return 唤醒工作方式key
  */
 +(NSString*)KEEP_ALIVE;
-
-/*!
- *  唤醒录音保存路径
- *
- *  @return 唤醒录音保存路径key
- */
-+(NSString*) IVW_AUDIO_PATH;
 
 #pragma mark -  评测相关设置key
 /*!

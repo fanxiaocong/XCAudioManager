@@ -62,7 +62,7 @@ typedef NS_ENUM(NSUInteger,IFlySpeechPlusServiceType){
  *
  *  @param errorCode 错误码
  */
-- (void)onCompleted:(int)errorCode;
+- (void)onError:(int)errorCode;
 
 /*!
  *  服务正常结束

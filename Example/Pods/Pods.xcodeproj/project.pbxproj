@@ -10,17 +10,17 @@
 		0340F3C7577FAA6CC1321FECB03DA626 /* Pods-XCAudioManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1058D863ADD905FBE9B14DBAFB52D3D2 /* Pods-XCAudioManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F97752EE1DFB91955915CA55F8BFA6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9343BE5E314B5F6882A294BDAD05D1D0 /* SystemConfiguration.framework */; };
 		29D1E22E97C1FD99C17C9531DE21335A /* Pods-XCAudioManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45458507F60A256998D98C7C90745C4F /* Pods-XCAudioManager_Example-dummy.m */; };
-		36D2E2992FEC0080000C2453932CA68A /* XCAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0674D99A9CC78335C3801D0D0021D83B /* XCAudioManager.m */; };
 		513EB567465DD486953C56FD0EE763A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E77D7C743DD2DAE909FE558FFCBB2ED /* Foundation.framework */; };
 		550480AFFD10D4DFA4013B8E63C6CA53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E77D7C743DD2DAE909FE558FFCBB2ED /* Foundation.framework */; };
 		593A2E8CAD830F93398010BEEF6F65A5 /* XFAudioRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B8965EA3C9E959958CFDCDD875EE132 /* XFAudioRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AA65C8EC1E4C87E6DADB806BD7E5C3E /* XFAudioReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C31D73CC95ED4AA77DF97C617BCA90 /* XFAudioReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6898E2D53A9F1F2BAD75FE46F717AF82 /* Pods-XCAudioManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38F794AA084BDDF5BDD3F64D655B3595 /* Pods-XCAudioManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AC548B3BA2307831D594D15B624B322 /* XCAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0674D99A9CC78335C3801D0D0021D83B /* XCAudioManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6F0CF30211448761858C2AC9FCF817AC /* XCAudioReader.h in Headers */ = {isa = PBXBuildFile; fileRef = AFC8831BB409E304623024FB2175E9F4 /* XCAudioReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78C88565DEAA3E4AAF268B021DAB50E3 /* XCAudioManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C283CB95E70EA73DAE92D55EA48FEE /* XCAudioManager-dummy.m */; };
+		87B500AD179F90EF02EC1E785FC3E82B /* XFAudioReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E941AEF4ED955FDB2A93FD6820C65A /* XFAudioReader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		97EB254C81C9900CDC2F3A0E2CFFA301 /* XCAudioManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C283CB95E70EA73DAE92D55EA48FEE /* XCAudioManager-dummy.m */; };
 		AE7266BE5084AA154C2B028E23EC3A90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E77D7C743DD2DAE909FE558FFCBB2ED /* Foundation.framework */; };
-		BC90D96E95F2ACAFD5DC1BF0A5943997 /* XFAudioRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1093B374B453A9090C3ED91AC38045 /* XFAudioRecognizer.m */; };
-		BED3FA870CDE0CCD0AD20298CDE38DFA /* XFAudioReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E941AEF4ED955FDB2A93FD6820C65A /* XFAudioReader.m */; };
+		C6E2087203D97E137E8E48479CA5BB95 /* XFAudioRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1093B374B453A9090C3ED91AC38045 /* XFAudioRecognizer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		CB4BAE9352B5FD42BBB4EE2066F34DF8 /* XCAudioManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1375C343D2B586AAB52DBC4F3A24657D /* XCAudioManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0BCC888D40212724D0EF1DC50C4E508 /* XCAudioHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 013106E881DEAB895709A5C945BED049 /* XCAudioHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D967886004524D18A2DACF0B434B0C7B /* XCAudioManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 56DA194AC2FE0DCDA1DD07FE11718209 /* XCAudioManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,12 +51,12 @@
 		02C31D73CC95ED4AA77DF97C617BCA90 /* XFAudioReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFAudioReader.h; sourceTree = "<group>"; };
 		0674D99A9CC78335C3801D0D0021D83B /* XCAudioManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCAudioManager.m; path = XCAudioManager/Classes/XCAudioManager.m; sourceTree = "<group>"; };
 		09CB35FF63D2874A620E6EB98294D2F4 /* XCAudioManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XCAudioManager-Info.plist"; sourceTree = "<group>"; };
-		100B72B02AF2131CF4B785A9473D91E7 /* Pods_XCAudioManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCAudioManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		100B72B02AF2131CF4B785A9473D91E7 /* Pods_XCAudioManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XCAudioManager_Tests.framework; path = "Pods-XCAudioManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1058D863ADD905FBE9B14DBAFB52D3D2 /* Pods-XCAudioManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XCAudioManager_Example-umbrella.h"; sourceTree = "<group>"; };
 		1375C343D2B586AAB52DBC4F3A24657D /* XCAudioManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCAudioManager-umbrella.h"; sourceTree = "<group>"; };
 		18318B276C4AC24F5F60B5DF816FCA49 /* Pods-XCAudioManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCAudioManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1E77D7C743DD2DAE909FE558FFCBB2ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		23F25B93089379753AD1CFEB76C89B1C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		23F25B93089379753AD1CFEB76C89B1C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		25EEC3008A02D3A504BF58987CF60E3E /* Pods-XCAudioManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCAudioManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2D559C1D8DCF688ACFE16F069CF7808C /* Pods-XCAudioManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XCAudioManager_Example-frameworks.sh"; sourceTree = "<group>"; };
 		30A47E6903A96D18CDE33E13430D610F /* Pods-XCAudioManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCAudioManager_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,20 +70,20 @@
 		4A64E8E2035BDF6681E3F27C1D6C9115 /* XCAudioManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCAudioManager.release.xcconfig; sourceTree = "<group>"; };
 		4B82E88E6CAE4B6381ADBCD0402F6E28 /* Pods-XCAudioManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XCAudioManager_Example.modulemap"; sourceTree = "<group>"; };
 		4C0E87903E3D481AB082E91D8AB8D50C /* Pods-XCAudioManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCAudioManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		51C0F5AA144F7C3FFA6E3B0A0298CB31 /* XCAudioManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCAudioManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51C0F5AA144F7C3FFA6E3B0A0298CB31 /* XCAudioManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XCAudioManager.framework; path = XCAudioManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DA194AC2FE0DCDA1DD07FE11718209 /* XCAudioManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCAudioManager.h; path = XCAudioManager/Classes/XCAudioManager.h; sourceTree = "<group>"; };
 		626B645654A7EBD90922B5B5B5BFAF49 /* Pods-XCAudioManager_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCAudioManager_Tests-Info.plist"; sourceTree = "<group>"; };
 		73FF4C95AAC804EAF0C77D950AC71A6C /* Pods-XCAudioManager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCAudioManager_Example-Info.plist"; sourceTree = "<group>"; };
 		7B033EDFDCBF5276618AE8A18729B78F /* Pods-XCAudioManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XCAudioManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7B8965EA3C9E959958CFDCDD875EE132 /* XFAudioRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFAudioRecognizer.h; sourceTree = "<group>"; };
 		9343BE5E314B5F6882A294BDAD05D1D0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		954F51CD5E3B54CAF0149CCA8BBEC24E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		954F51CD5E3B54CAF0149CCA8BBEC24E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AFC8831BB409E304623024FB2175E9F4 /* XCAudioReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCAudioReader.h; path = XCAudioManager/Classes/XCAudioReader.h; sourceTree = "<group>"; };
-		B83F0AC60BB33E2687AF1DF283125087 /* XCAudioManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = XCAudioManager.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		B83F0AC60BB33E2687AF1DF283125087 /* XCAudioManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XCAudioManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB7733607D4CEC10ED3E76FF8927D99E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		BCC93491A44C2D211356C3AFEADC1502 /* Pods-XCAudioManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XCAudioManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C794F725E3E3BC0AA35DD08842D54854 /* Pods_XCAudioManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCAudioManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C794F725E3E3BC0AA35DD08842D54854 /* Pods_XCAudioManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XCAudioManager_Example.framework; path = "Pods-XCAudioManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D713A2AD544A6974ABD1DB43B174CE55 /* XCAudioManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCAudioManager-prefix.pch"; sourceTree = "<group>"; };
 		DE12106B95B1113BE4B84BD7AD9859D5 /* Pods-XCAudioManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCAudioManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E2BD552961997A0EEE9D5C38A8DA8E18 /* XCAudioManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCAudioManager.debug.xcconfig; sourceTree = "<group>"; };
@@ -261,10 +261,10 @@
 			isa = PBXGroup;
 			children = (
 				013106E881DEAB895709A5C945BED049 /* XCAudioHeader.h */,
-				AFC8831BB409E304623024FB2175E9F4 /* XCAudioReader.h */,
-				4530CDF81C51989D0B2B140EA8692730 /* XCAudioRecognizer.h */,
 				56DA194AC2FE0DCDA1DD07FE11718209 /* XCAudioManager.h */,
 				0674D99A9CC78335C3801D0D0021D83B /* XCAudioManager.m */,
+				AFC8831BB409E304623024FB2175E9F4 /* XCAudioReader.h */,
+				4530CDF81C51989D0B2B140EA8692730 /* XCAudioRecognizer.h */,
 				C6B9A45D6801CFBFA12F44AE7E2A3B1B /* Frameworks */,
 				B889620AA3511376760AB3EE8C4DC0F7 /* Pod */,
 				7AF0362D5304620BF147347343A92E5F /* Support Files */,
@@ -334,7 +334,7 @@
 			buildConfigurationList = E49F7EB45D6CBDAA82074CF8FF2E8493 /* Build configuration list for PBXNativeTarget "XCAudioManager" */;
 			buildPhases = (
 				A8195BA49F6EB103F4A36DD1EA76D14E /* Headers */,
-				57650D8AAA7BC713E5DC34463C2E3E5E /* Sources */,
+				55A4E8E8473A9165F767501D4D757556 /* Sources */,
 				494FD42F96A8FA350DF69BC11F31AF49 /* Frameworks */,
 				EF3EE49F49F6E0607E4484DB8E743A0C /* Resources */,
 			);
@@ -428,14 +428,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57650D8AAA7BC713E5DC34463C2E3E5E /* Sources */ = {
+		55A4E8E8473A9165F767501D4D757556 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36D2E2992FEC0080000C2453932CA68A /* XCAudioManager.m in Sources */,
-				78C88565DEAA3E4AAF268B021DAB50E3 /* XCAudioManager-dummy.m in Sources */,
-				BED3FA870CDE0CCD0AD20298CDE38DFA /* XFAudioReader.m in Sources */,
-				BC90D96E95F2ACAFD5DC1BF0A5943997 /* XFAudioRecognizer.m in Sources */,
+				6AC548B3BA2307831D594D15B624B322 /* XCAudioManager.m in Sources */,
+				97EB254C81C9900CDC2F3A0E2CFFA301 /* XCAudioManager-dummy.m in Sources */,
+				87B500AD179F90EF02EC1E785FC3E82B /* XFAudioReader.m in Sources */,
+				C6E2087203D97E137E8E48479CA5BB95 /* XFAudioRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +465,36 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		05A3E5070E0C638AD485B612DA5A3DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2BD552961997A0EEE9D5C38A8DA8E18 /* XCAudioManager.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XCAudioManager/XCAudioManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCAudioManager/XCAudioManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XCAudioManager/XCAudioManager.modulemap";
+				PRODUCT_MODULE_NAME = XCAudioManager;
+				PRODUCT_NAME = XCAudioManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1D8B4876AD1FC97E9C41690BA89B9BE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE12106B95B1113BE4B84BD7AD9859D5 /* Pods-XCAudioManager_Tests.release.xcconfig */;
@@ -564,37 +594,6 @@
 			};
 			name = Debug;
 		};
-		54F1A9E2D5B23EFBAADCC8C95D14BFB2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2BD552961997A0EEE9D5C38A8DA8E18 /* XCAudioManager.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XCAudioManager/XCAudioManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XCAudioManager/XCAudioManager-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XCAudioManager/XCAudioManager.modulemap";
-				PRODUCT_MODULE_NAME = XCAudioManager;
-				PRODUCT_NAME = XCAudioManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		8A3D9BDE921937CEF7318F6AF955F425 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 25EEC3008A02D3A504BF58987CF60E3E /* Pods-XCAudioManager_Example.debug.xcconfig */;
@@ -626,6 +625,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		A8439D34909F9B8EFEF5F9A67CA7641D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A64E8E2035BDF6681E3F27C1D6C9115 /* XCAudioManager.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XCAudioManager/XCAudioManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCAudioManager/XCAudioManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XCAudioManager/XCAudioManager.modulemap";
+				PRODUCT_MODULE_NAME = XCAudioManager;
+				PRODUCT_NAME = XCAudioManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -682,41 +712,10 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		CA6885EEBF8BDAEA0FA0C47D5DB7D00E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A64E8E2035BDF6681E3F27C1D6C9115 /* XCAudioManager.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XCAudioManager/XCAudioManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XCAudioManager/XCAudioManager-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XCAudioManager/XCAudioManager.modulemap";
-				PRODUCT_MODULE_NAME = XCAudioManager;
-				PRODUCT_NAME = XCAudioManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -818,8 +817,8 @@
 		E49F7EB45D6CBDAA82074CF8FF2E8493 /* Build configuration list for PBXNativeTarget "XCAudioManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				54F1A9E2D5B23EFBAADCC8C95D14BFB2 /* Debug */,
-				CA6885EEBF8BDAEA0FA0C47D5DB7D00E /* Release */,
+				05A3E5070E0C638AD485B612DA5A3DDE /* Debug */,
+				A8439D34909F9B8EFEF5F9A67CA7641D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

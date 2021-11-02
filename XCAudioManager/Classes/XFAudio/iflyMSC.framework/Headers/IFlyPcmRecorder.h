@@ -14,7 +14,7 @@
 #import <AudioToolbox/AudioFile.h>
 #import <AudioToolbox/AudioServices.h>
 #import <AudioToolbox/AudioConverter.h>
-#import <AVFoundation/AVAudioSession.h>
+#import <AVFoundation/AVFoundation.h>
 
 
 @class IFlyPcmRecorder;
@@ -104,6 +104,13 @@
  *  @param savePath 音频保存路径
  */
 -(void) setSaveAudioPath:(NSString *)savePath;
+
+/*!
+ *  录音器是否完成
+ *
+ *  @return  录音器完全结束返回YES，否则返回NO
+ */
+-(BOOL) isCompleted;
 
 @end
 

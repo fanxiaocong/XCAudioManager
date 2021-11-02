@@ -34,7 +34,9 @@
   "pod_target_xcconfig": {
     "ENABLE_BITCODE": "NO",
     "ONLY_ACTIVE_ARCH": "NO",
-    "VALID_ARCHS": "arm64e",
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "i386 x86_64 arm64"
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   }
 }
